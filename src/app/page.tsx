@@ -11,7 +11,7 @@ export default function Home() {
     setLoading(true)
     try {
       
-      const response = await axios.post("predict-stock-ge8prohyb-hk264603gmailcoms-projects.vercel.app/predict",{category});
+      const response = await axios.post("https://predict-stock-lovat.vercel.app/predict",{category});
       setPrediction(response.data.prediction)
     } catch (error) {
       console.log(error)
