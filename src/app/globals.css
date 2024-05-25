@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+@font-face {
+  font-family:monogram;
+  src: url('/monogram.ttf');
+}
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(to right, #14003c, #330062, #000000);
+  font-family:monogram,monospace;
+}
+.box{
+  height: 10rem;
+  width: 40rem;
+  background-color: white;
+  outline: auto;
+  margin-top: 2rem;
+  box-shadow: rgba(251, 251, 251, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+}
+ h1{
+  color: rgb(255, 255, 255);
+  font-size: 3rem;
+  font-family:monogram,monospace;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+input{
+  box-shadow: rgba(251, 251, 251, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+  height: 3rem;
+  width:30rem;
+  font-family: monogram,monospace;
+  background-color: #ffffff;
+  outline: auto;
+  font-size: 3rem;
+  color: rgb(0, 0, 0);
+  border:1px solid white;
+}
+.submitBtn{
+  width: 8rem;
+  height: 1rem;
+  cursor: pointer;
+  font-size: 2rem;
+  padding-bottom:3rem;
+  font-family: monogram;
+  background-color: white;
+  outline: auto;
+
+}
+.ul-1 li{
+  line-height: 2rem;
+  font-family: monogram,monospace;
+  color: white;
+  font-size: 2rem;
+}
+.predict{
+  color: black;
+  font-family: monogram,monospace;
+}
+.predict{
+  font-size:1.2rem;
+}
